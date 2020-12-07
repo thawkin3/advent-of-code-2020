@@ -50,10 +50,10 @@ export const findMissingSeatId = seats => {
   seatIds.sort((a, b) => a - b)
 
   for (let i = 1; i < seatIds.length; i++) {
-    if (seatIds[i] - seatIds[i - 1] > 1) {
+    if (seatIds[i] - seatIds[i - 1] === 2) {
       return seatIds[i] - 1
     }
   }
 
-  return 0
+  return -1
 }

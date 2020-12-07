@@ -12,6 +12,8 @@ export const find2020FromPairUsingArray = values => {
       return [currentValue, counterpartValue, currentValue * counterpartValue]
     }
   }
+
+  return null
 }
 
 export const find2020FromPairUsingObject = values => {
@@ -28,6 +30,8 @@ export const find2020FromPairUsingObject = values => {
       return [currentValue, counterpartValue, currentValue * counterpartValue]
     }
   }
+
+  return null
 }
 
 export const find2020FromTriplet = values => {
@@ -45,4 +49,6 @@ export const find2020FromTriplet = values => {
       }
     }
   }
+
+  return null
 }

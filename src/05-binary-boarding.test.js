@@ -57,4 +57,9 @@ describe('findMissingSeatId', () => {
   it('returns the missing seat id', () => {
     expect(findMissingSeatId(seats)).toBe(539)
   })
+
+  it('return -1 if the missing seat id is not found', () => {
+    const sampleSeats = ['BFFFBBFRRR', 'FFFBBBFRRR', 'BBFFBBFRLL']
+    expect(findMissingSeatId(sampleSeats)).toBe(-1)
+  })
 })

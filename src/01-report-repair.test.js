@@ -14,6 +14,10 @@ describe('find2020', () => {
       expect(result[0] * result[1]).toBe(319531)
       expect(result[2]).toBe(319531)
     })
+
+    it('returns null if there are not two numbers that sum to 2020 in the array', () => {
+      expect(find2020FromPairUsingArray([1, 2])).toBe(null)
+    })
   })
 
   describe('find2020FromPairUsingObject', () => {
@@ -24,6 +28,10 @@ describe('find2020', () => {
       expect(result[0] * result[1]).toBe(319531)
       expect(result[2]).toBe(319531)
     })
+
+    it('returns null if there are not two numbers that sum to 2020 in the array', () => {
+      expect(find2020FromPairUsingObject([1, 2])).toBe(null)
+    })
   })
 
   describe('find2020FromTriplet', () => {
@@ -33,6 +41,10 @@ describe('find2020', () => {
       expect(result[0] + result[1] + result[2]).toBe(2020)
       expect(result[0] * result[1] * result[2]).toBe(244300320)
       expect(result[3]).toBe(244300320)
+    })
+
+    it('returns null if there are not three numbers that sum to 2020 in the array', () => {
+      expect(find2020FromTriplet([1, 2, 3])).toBe(null)
     })
   })
 })
